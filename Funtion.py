@@ -1,3 +1,4 @@
+import mymodule as persion
 def my_funtion(*kids):
 	print("Hello  from a funtion"+kids[2])
 
@@ -12,4 +13,6 @@ class Persion():
 p1=Persion("Jione",36)
 print(p1.age)
 print(p1.name)
-		
+a = persion.persion["age"]
+print(a)
+#######################
