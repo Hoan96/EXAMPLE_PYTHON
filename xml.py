@@ -24,7 +24,5 @@ for x in TagMangement:
 	xxx = str(x.ids)
 	new = ET.Element("Tag",dict(TagID = xxx,TagName=x.name,TagAddress=x.addr,TagFunc=x.fun,TagValue=x.tagvalue))
 	rootx.append(new)
-ET.dump(rootx)
 treex = ET.ElementTree(rootx)
 treex.write("newx.xml")
-print(treex)
