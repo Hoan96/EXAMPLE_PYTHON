@@ -19,3 +19,11 @@ for elem  in root:
 	TagMangement.append(tag)
 for tagss in TagMangement:
 	print(tagss.name)
+data = ET.Element('')
+items =ET.SubElement(data,'Root')
+items.set('TagID','1')
+items.set('TagName','NAME')
+mydata = ET.tostring(data)
+print(mydata)
+myfile = open("new.xml","w")
+myfile.write(mydata)
