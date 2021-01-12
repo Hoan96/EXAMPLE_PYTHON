@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 mydata = {
 	'cats':["BMW","VOLVO","FORD"],
@@ -19,5 +20,7 @@ excel = pd.read_csv('fie.csv')
 #	if excel.loc[x,'STT']>9:
 #		excel.drop(x,inplace=True) #Xóa row mong muốn
 #excel.drop(7,inplace=True)
-excel.drop_duplicates(inplace = True) #Xóa 2 row trung nhau
+#excel.drop_duplicates(inplace = True) #Xóa 2 row trung nhau
+excel.plot()
+plt.show()
 print(excel.to_string())
